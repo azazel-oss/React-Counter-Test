@@ -1,10 +1,11 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [counter, setCounter] = useState(0);
   return (
     <div>
-      <h1>Our first test</h1>
+      <h1>Simple Counter</h1>
       <p data-testid="counter-value">{counter}</p>
       <button onClick={() => setCounter((prevState) => prevState - 1)}>
         Decrement
